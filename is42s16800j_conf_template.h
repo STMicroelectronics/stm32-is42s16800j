@@ -32,8 +32,9 @@
 /** @addtogroup BSP
   * @{
   */
-#define REFRESH_COUNT                    ((uint32_t)0x0603)   /* SDRAM refresh counter (100Mhz SD clock) */
-   
+#define REFRESH_COUNT                    ((uint32_t)0x0603)   /* SDRAM refresh counter value for 100 MHz SDRAM clock.
+                                                                 Recalculate it if the SDRAM clock frequency changes. */
+
 #define IS42S16800J_TIMEOUT             ((uint32_t)0xFFFF)
 
 #ifdef __cplusplus
